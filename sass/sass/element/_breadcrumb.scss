@@ -1,0 +1,36 @@
+.breadcrumb {
+    // border-bottom: 1px solid #EEE;
+    padding: .1em 0em .1em;
+    font-size: .875em;
+    margin: 0;
+    ul {
+        @include li-reset;
+        li {
+            display: inline-block;
+            margin: 0px .1em .1em 0px;
+            &:before {
+                @extend %slash;
+            }
+            &:first-child:before {
+                content: "";
+                display: inline-block;
+                color: #666;
+                margin-left: 0;
+                padding: 0;
+            }
+        }
+    }
+    a {
+        @include aSetting_nocolor;
+        display: inline-block;
+    }
+}
+.mp{
+    .breadcrumb{
+        margin: -10px 0 0 10%;
+        z-index: 999;
+        @include screen('mobile') {
+          margin: 10px 0 0 5%;  
+      }
+  }
+}

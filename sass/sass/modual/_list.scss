@@ -1,0 +1,116 @@
+.lp {
+    margin: 1em 3em;
+    @include screen('mobile') {
+     margin: 1em 2em;   
+ }
+ table {
+    td {
+        a {
+            @include aSetting_nocolor;
+        }
+        &.date {
+            text-align: center;
+            color: #666;
+            @include screen('mobile') {
+                text-align: left;
+            }
+        }
+        &.num {
+            text-align: center;
+            color: #666;
+            @include screen('mobile') {
+                text-align: left;
+            }
+        }
+    }
+}
+.list {
+    clear: both;
+    &>ul, ol {
+        list-style-type: none;
+        padding: 0;
+        border-top: 2px solid $primaryColor;
+        font-size: 1.125em;
+        &>li {
+            padding: 1em 0;
+            border-bottom: 1px solid #DDD;
+                position: relative; // outline: 1px solid blue;
+                .tag {
+                    margin-left: 2em;
+                }
+                &>a {
+                    display: block;
+                    padding-left: 2em;
+                    position: relative;
+                    line-height: 1.45em;
+                    color: $color-word;
+                    &:hover {
+                        color: $aHover;
+                    }
+                    .num {
+                        width: 1.5em;
+                        text-align: right;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        &:after {
+                            content: ".";
+                            display: inline-block;
+                        }
+                    }
+                }
+                span.dept {
+                    display: inline-block;
+                    font-size: .938em;
+                    @include screen("mobile") {
+                        display: block;
+                    }
+                }
+                time {
+                    display: inline-block;
+                    color:$color-gray;
+                    font-size: .938em;
+                }
+            }
+        }
+    }
+}
+.title2{
+    text-align: center!important;
+    margin-top: .2em;
+}
+.title3{
+    text-align: center!important;
+    margin: .4em 0 .2em;
+}
+.sub-search{
+    width: 240px;
+    float: right;
+    margin-top: -4em;
+    font-size: .938em;
+    overflow: hidden;
+    @include screen("mobile") {
+      float: none;
+      margin: 0 0 .5em;
+      width: 280px;
+  }
+  label{
+    font-size: 0;
+}
+.txtinput{
+    width: 150px!important;
+    @include screen("mobile") {
+       width: 190px!important; 
+   }
+}
+.btn-search{
+    background: $secondaryColor;
+    border: 1px solid $secondaryColor;
+    &:hover, &:focus{
+        background: darken($secondaryColor, 8);
+        border: 1px solid darken($secondaryColor, 8);
+    }
+}
+}
+
+
