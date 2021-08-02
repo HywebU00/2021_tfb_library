@@ -60,6 +60,7 @@ body {
 ////////////////////////////////////////////////////////////
 // 為了與首頁區隔，請在內頁加上innerpage ClassName
 .innerpage {
+    min-height: 1000px;
     >.container {
         @include gutter(); //gutter 代表左右要留白
         display: flex;
