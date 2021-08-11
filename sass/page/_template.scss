@@ -42,14 +42,14 @@ body {
     position: relative;
     margin: 0 auto;
     padding: 0;
-    max-width: $container-max;
+    max-width: 100%;
     background: $mpcontent;
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
     h2 {
         font-family: 'Noto Serif TC', serif;
         font-size: 2.125em;
         line-height: 1.25em;
-        letter-spacing: .2em;
+        letter-spacing: 0.02em;
         text-align: left;
         font-weight: 600;
         color:$primaryColor;

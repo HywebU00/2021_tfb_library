@@ -178,7 +178,7 @@
             box-sizing: border-box;
         }
         width:280px;
-        padding: 3em 0;
+        padding: 2em 0;
         position:absolute;
         top: 0;
         left: 0;
@@ -290,6 +290,7 @@
     .navigation {
         position: relative;
         text-align: left;
+        margin-bottom: 1em;
         ul {
             float: none;
             width: 90%;
@@ -301,8 +302,8 @@
             border-bottom: none;
             border-right: none;
             li {
-                float: left;
-                width: 50%;
+                // float: left;
+                // width: 50%;
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
@@ -368,6 +369,7 @@
             margin: 0 auto;
             background: #fff;
             padding: .5em;
+            display: none;
             hr{
                 margin: 0;
             }

@@ -36,7 +36,7 @@
                     <div class="navlist">
                         <ul>
                             <li><a class="goCenter2" href="#center">跳至內容區</a></li>
-                            <li><a href="#">登入</a></li>
+                            <li class="loginbtn"><a data-fancybox data-type="iframe" data-src="popup_login.html" href="javascript:;" title="會員登入">登入</a></li>
                             <li><a href="#">線上註冊</a></li>
                             <li><a href="#">網站導覽</a></li>
                             <li class="help_p"><a href="#">輔助偏好設定</a></li>
@@ -53,8 +53,8 @@
                             </div>
 
                             <div class="flex-form">
-                             <!-- changeTextColor -->
-                             <div class="form_grp form_inline">
+                               <!-- changeTextColor -->
+                               <div class="form_grp form_inline">
                                 <label for="changeTextColor">文字顏色</label>
                                 <select id="changeTextColor">
                                     <option data-val="tC_default" selected="selected">預設文字顏色</option>
@@ -116,13 +116,7 @@
     <!-- main Start -->
     <div id="center" class="main innerpage">
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-        <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
-        <!-- //// class 都可以隨意命名 !!! ///// -->
-        <section class="col-12 main_image has_bg">
-            <div class="container">
-                <img src="images/has_bg2.jpg" alt="裝飾圖片-書">
-            </div>
-        </section>
+
         <div class="container">
             <!-- 主要內容區 -->
             <div class="center_block">
@@ -134,11 +128,13 @@
                     </ul>
                 </div>
                 <!-- breadcrumb路徑 end-->
-                <h2 class="title2">最/新/消/息</h2>
                 <!-- content-area star -->
                 <div class="content-area">
+
                     <!-- LP Start -->
                     <section class="lp">
+                        <h2 class="title2" tabindex="0">最新消息</h2>
+
                         <!-- category -->
                         <div class="category">
                             <ul>
@@ -157,91 +153,71 @@
                         </div>
                     </div>
                     <!-- sub-search End -->
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <form action="">
+                            <div class="form_inline">
+                                <div class="total"> 共<span>308</span>筆資料</div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Pagination end-->
                     <!-- 文字列表 -->
                     <div class="list">
                         <ul>
-                            <li>
+                            <li> 
+                                <time>2021-04-01</time>
                                 <a href="#">
-                                    <span class="num">1</span> 
                                     2021年4月份新書公告
-                                    <time>2021-04-01</time>
                                 </a>
                             </li>
                             <li>
+                                <time>2021-03-01</time>
                                 <a href="#">
-                                    <span class="num">2</span> 
                                     2021年3月份新書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告書公告
-                                    <time>2021-03-01</time>
                                 </a>
                             </li>
                             <li>
+                                <time>2021-02-01</time>
                                 <a href="#">
-                                    <span class="num">3</span> 
                                     2021年2月份新書公告
-                                    <time>2021-02-01</time>
                                 </a>
                             </li>
                             <li>
+                                <time>2021-01-01</time>
                                 <a href="#">
-                                    <span class="num">4</span> 
                                     2021年1月份新書公告
-                                    <time>2021-01-01</time>
                                 </a>
                             </li>
                             <li>
+                                <time>2020-12-01</time>
                                 <a href="#">
-                                    <span class="num">5</span> 
                                     2020年12月份新書公告
-                                    <time>2020-12-01</time>
                                 </a>
                             </li>
                             <li>
+                                <time>2020-11-01</time>
                                 <a href="#">
-                                    <span class="num">6</span> 
                                     2020年11月份新書公告
-                                    <time>2020-11-01</time>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </section>
                 <!-- LP End -->
-                <!-- Pagination -->
-                <div class="pagination">
-                    <form action="">
-                        <div class="form_inline">
-                            <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select name="" id="" aria-label="每頁顯示">
-                                <option value="">10</option>
-                                <option value="">20</option>
-                                <option value="">30</option>
-                                <option value="">40</option>
-                            </select> 筆， <input type="button" value="確定" class="btn btn-submit">
-                        </div>
-                    </div>
-                </form>
-                <ul class="page">
-                    <li class="first"><a href="#" title="第一頁">第一頁 </a></li>
-                    <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">8</a></li>
-                    <li><a href="#">9</a></li>
-                    <li><a href="#">10</a></li>
-                    <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
-                </ul>
-            </div>
-            <!-- Pagination end-->
-        </div>
-        <!-- content-area end -->
+                <!-- loading star -->
+                <div class="loading">
+                    <img src="images/loading.gif" alt="loading">
+                    <p>檔案下載中，請稍候</p>
+                </div>
+                <!-- loading end -->
 
+            </div>
+            <!-- content-area end -->
+
+        </div>
+        <!-- 主要內容區 end-->
     </div>
-    <!-- 主要內容區 end-->
-</div>
 </div>
 
 

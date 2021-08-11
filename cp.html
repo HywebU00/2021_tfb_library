@@ -36,7 +36,7 @@
                     <div class="navlist">
                         <ul>
                             <li><a class="goCenter2" href="#center">跳至內容區</a></li>
-                            <li><a href="#">登入</a></li>
+                            <li class="loginbtn"><a data-fancybox data-type="iframe" data-src="popup_login.html" href="javascript:;" title="會員登入">登入</a></li>
                             <li><a href="#">線上註冊</a></li>
                             <li><a href="#">網站導覽</a></li>
                             <li class="help_p"><a href="#">輔助偏好設定</a></li>
@@ -116,13 +116,7 @@
     <!-- main Start -->
     <div id="center" class="main innerpage">
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-        <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
-        <!-- //// class 都可以隨意命名 !!! ///// -->
-        <section class="col-12 main_image has_bg">
-            <div class="container">
-                <img src="images/has_bg2.jpg" alt="裝飾圖片-書">
-            </div>
-        </section>
+
         <div class="container">
             <!-- 主要內容區 -->
             <div class="center_block">
@@ -135,17 +129,18 @@
                     </ul>
                 </div>
                 <!-- breadcrumb路徑 end-->
-                <h2 class="title">護盲國家隊2021 有你、有我，因為愛</h2>
-                <!-- function_panel -->
-                <div class="function_panel">
-                    <div class="publish_time">
-                        <span>發布日期：</span><time>2019-01-01</time>
-                    </div>
-                </div>
+
                 <!-- content-area star -->
                 <div class="content-area">
                     <!-- CP Start -->
                     <section class="cp">
+                        <h2 class="title" tabindex="0">護盲國家隊2021 有你、有我，因為愛</h2>
+                        <!-- function_panel -->
+                        <div class="function_panel">
+                            <div class="publish_time">
+                                <span>發布日期：</span><time>2019-01-01</time>
+                            </div>
+                        </div>
                         <div class="pic">
                             <!-- 此範例為4:3比例 -->
                             <picture>
@@ -280,59 +275,59 @@
                                         <li class="back"><a href="javascript:history.back()">回上一頁</a></li>
                                         <!-- <li class="print"><a href="#">友善列印</a></li>
                                             <li class="forward"><a href="#">轉寄友人</a></li> -->
-                                    </ul>
-                                </div>
-                            </section>
-                            <!-- CP End -->
+                                        </ul>
+                                    </div>
+                                </section>
+                                <!-- CP End -->
+
+                            </div>
+                            <!-- content-area end -->
 
                         </div>
-                        <!-- content-area end -->
-
+                        <!-- 主要內容區 end-->
                     </div>
-                    <!-- 主要內容區 end-->
                 </div>
+
+
+                <!-- footer Start-->
+                <footer>
+                    <div class="container">
+                        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+                        <div class="footer_info">
+                            <p>
+                                電話：02-7725-8000、02-2361-6663<br>
+                                傳真：02-2375-3925、02-2331-6593<br>
+                                地址：台北市中正區忠孝西路一段50號13樓之19<br>
+                                劃撥帳號：15935356 (為本會一般捐款，依目前會務事項而使用)<br>
+                                劃撥帳號：14365043 (為本會專案專款專用的帳號)<br>
+                                Email : eyelove@tfb.org.tw<br>
+                                Copyright © 2021 Greatest Idea Strategy Co.,Ltd All rights reserved.
+                            </p>
+                        </div>
+                        <div class="footer_icon">
+                            <a target="_blank" href="javascript:;" title="另開視窗">
+                                <img src="images/accessibility2.jpg" alt="無障礙標章">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+                <!-- footer End -->
             </div>
+            <a href="javascript:;" class="scrollToTop">回頁首</a>
+            <!-- JQ -->
+            <script src="js/jquery-3.6.0.min.js"></script>
+            <!-- 外掛 plugin js -->
+            <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+            <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+            <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+            <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+            <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+            <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+            <script src="vendor/facybox/dist/jquery.fancybox.min.js"></script><!-- facybox js-->
+            <!-- hyUI -->
+            <script src="js/hyui.js"></script>
+            <!-- 客製js -->
+            <script src="js/customize.js"></script>
+        </body>
 
-
-            <!-- footer Start-->
-            <footer>
-                <div class="container">
-                    <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
-                    <div class="footer_info">
-                        <p>
-                            電話：02-7725-8000、02-2361-6663<br>
-                            傳真：02-2375-3925、02-2331-6593<br>
-                            地址：台北市中正區忠孝西路一段50號13樓之19<br>
-                            劃撥帳號：15935356 (為本會一般捐款，依目前會務事項而使用)<br>
-                            劃撥帳號：14365043 (為本會專案專款專用的帳號)<br>
-                            Email : eyelove@tfb.org.tw<br>
-                            Copyright © 2021 Greatest Idea Strategy Co.,Ltd All rights reserved.
-                        </p>
-                    </div>
-                    <div class="footer_icon">
-                        <a target="_blank" href="javascript:;" title="另開視窗">
-                            <img src="images/accessibility2.jpg" alt="無障礙標章">
-                        </a>
-                    </div>
-                </div>
-            </footer>
-            <!-- footer End -->
-        </div>
-        <a href="javascript:;" class="scrollToTop">回頁首</a>
-        <!-- JQ -->
-        <script src="js/jquery-3.6.0.min.js"></script>
-        <!-- 外掛 plugin js -->
-        <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
-        <script src="vendor/slick/slick.min.js "></script><!-- slick -->
-        <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
-        <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
-        <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
-        <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
-        <script src="vendor/facybox/dist/jquery.fancybox.min.js"></script><!-- facybox js-->
-        <!-- hyUI -->
-        <script src="js/hyui.js"></script>
-        <!-- 客製js -->
-        <script src="js/customize.js"></script>
-    </body>
-
-    </html>
+        </html>

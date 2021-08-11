@@ -1,12 +1,12 @@
 //sp
 .bookbrowsing{
     h2{
-        text-align: center;
-        margin-top: .5em;
+        // text-align: center;
+        margin: .3em 0 0 30px;
     }
     ul{
         list-style: none;
-        margin: 1em 20px 1.5em;
+        margin: .5em 20px 1.5em;
         padding: 0;
         text-align: center;
         overflow: hidden;
@@ -17,9 +17,9 @@
             @include make-lg-column(4);
             padding: 15px;
             @include screen('mobile') {
-             padding:  5px 15px; 
-         }
-         a{
+               padding:  5px 15px; 
+           }
+           a{
             background: $primaryColor;
             display: block;
             font-family: 'Noto Serif TC', serif;
@@ -33,70 +33,89 @@
                 background: darken($primaryColor, 10);;
             }
             @include screen('mobile') {
-               padding: 1em .5em; 
-           }
-       }
-   }      
+             padding: 1em .5em; 
+         }
+     }
+ }      
 }
 }
 
 .content-area{
-   background: $color-white;
-   max-width: 100%;
-   box-shadow: 5px 0 50px rgba(0, 0, 0, .16);
-   margin: 0 auto 3em;
-   padding: 20px 0;
-   overflow: hidden;
+ background: $color-white;
+ max-width: 100%;
+ box-shadow: 5px 0 50px rgba(0, 0, 0, .16);
+ margin: 0 auto 3em;
+ padding: 20px 0;
+ overflow: hidden;
+ @include screen('mobile') {
+    margin: 50px auto 3em;
+}
 }
 
 .online{
     h2{
-        text-align: center;
-        margin-top: .2em;
+        margin: .2em 1.5em;
+        @include screen('mobile') {
+          margin: .2em .7em;  
+      }
+  }
+  h3{
+    color:$primaryColor;
+    margin: .5em 0;
+}
+.title4{
+    color: #ff4e00; 
+    text-align: center;
+    border-bottom: solid 1px #ccc; 
+    padding-bottom: .5em;
+    margin: 0 0 .5em;
+    @include screen('mobile') {
+       font-size: 1.8em;  
+   }
+}
+
+.int{
+    margin: 1em 3em;
+    line-height: 1.6em;
+    font-size: 1.125em;
+    @include screen('mobile') {
+        margin: 1em 2em;
     }
-    h3{
-        color:$primaryColor;
+    h4{
+        margin: .5em 0; 
+    }
+    p{
+        margin: 0; 
+    }
+    ol, ul{
         margin: .5em 0;
     }
+}
+.clist{
+    list-style: none;
+    text-indent:-2em;
+    margin: 0;
 
-    .int{
-        margin: 1em 3em;
-        line-height: 1.6em;
-        @include screen('mobile') {
-            margin: 1em 2em;
-        }
-        h4{
-            margin: .5em 0; 
-        }
-        p{
-            margin: 0; 
-        }
-        ol, ul{
-            margin: .5em 0;
-        }
-    }
-    .clist{
-        list-style: none;
-        text-indent:-2em;
-        margin: 0;
-
-    }
-    .numlist{
-        text-indent:0;
-        margin: .5em 0; 
-        padding: 0 0 0 1em;
-    }
+}
+.numlist{
+    text-indent:0;
+    margin: .5em 0; 
+    padding: 0 0 0 1em;
+}
 }
 
 .consult{
     text-align: center;
     h3{
-       margin: .5em 0; 
-   }
+     margin: .5em 0; 
+ }
 }
 
 .formbox{
-  margin: 1em 2em;  
+    margin: 1em 2.8em;
+    @include screen("mobile") {
+        margin: 1em;
+    }
 }
 .forgetpassword_block{
     h3{
@@ -108,7 +127,9 @@
         padding-bottom: .5em;
     }
     p{
-        margin: 0 15px;  
+        margin: 0 10px;
+        font-size: 1.125em;
+        line-height: 1.6em; 
     }
     .txtinput{
         width: 100%!important;
@@ -133,20 +154,19 @@
 
 .book-recommend{
     h2{
-        text-align: center;
         margin-bottom: .5em;
         @include screen('mobile') {
             font-size: 1.6em;
         }
     }
     .booklist{
-     background: $color-white;
-     max-width: 100%;
-     box-shadow: 5px 0 20px rgba(0, 0, 0, .16);
-     margin: 0 auto 1em;
-     padding: 30px 0 20px;
-     overflow: hidden;
-     ul{
+       background: $color-white;
+       max-width: 100%;
+       box-shadow: 5px 0 20px rgba(0, 0, 0, .16);
+       margin: 0 auto 1em;
+       padding: 30px 0 20px;
+       overflow: hidden;
+       ul{
         list-style: none;
         margin: 0 20px;
         padding: 0;
@@ -163,6 +183,7 @@
                 margin: .8em auto 2em;
                 overflow: hidden;
                 line-height: 1.5em;
+                font-size: .938em;
             }
             .img-container {
                 margin: 0 1em 0 0;
@@ -244,9 +265,9 @@
         line-height: 1.8em;
         overflow: hidden;
         @include screen('mobile') {
-           margin: 0 0 1em 1em; 
-       }
-       >li{
+         margin: 0 0 1em 1em; 
+     }
+     >li{
         @include make-xs-column(12);
         @include make-sm-column(6);
         @include make-md-column(4);
@@ -258,11 +279,21 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         max-width: 96%;
+        margin-right: 1em;
         &:before{
             content:"●";
-            margin-right: .3em;
+            margin-right: .5em;
         }
+        @include screen('mobile') {
+          white-space: normal;
+          overflow: visible;
+          margin-left: 2em;
+
+          &:before{
+            margin-left: -1.5em;
+        } 
     }
+}
 }
 .more{
     width: 13em;
@@ -295,8 +326,8 @@
             .img-container {
                 float: left;
                 width: 200px;
-                margin: 0 1em 0 0;
-                background: #F1F1F1;
+                margin: 5px 1em 5px 0;
+                // background: #F1F1F1;
                 @include aspect-ratio(4, 5);
                 @include screen('xs_mobile') {
                     float:none;
@@ -381,7 +412,6 @@
 } 
 
 .req{
-    margin-bottom: 1em;
     label{
         font-size: 0;
     }
@@ -390,11 +420,11 @@
     label{
         font-size: 0;
     }
-    background: rgba(255,255,255, 1);
-    border-radius: 5px;
-    padding: 3px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    margin-top: .5em;
+    // background: rgba(255,255,255, 1);
+    // border-radius: 5px;
+    // padding: 3px 0;
+    // box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    // margin-top: .5em;
 }
 
 .testimg{
@@ -403,9 +433,9 @@
     }
     @include screen('mobile') {
         img{
-           max-width: 100%; 
-       }
-   }
+         max-width: 100%; 
+     }
+ }
 }
 
 .chapter{
@@ -425,10 +455,10 @@
 .brl{
     margin: 1em 3em 2em;
     @include screen('mobile') {
-     margin: 1em 1.5em 2em; 
- }
+       margin: 1em 1.5em 2em; 
+   }
 
- .btn_grp{
+   .btn_grp{
     text-align: left;
     .btn{
         border-radius: 30px;
@@ -438,4 +468,36 @@
 .i_arrow_right2{
     margin-left: .2em;
 }
+}
+
+.login{
+    .flex-form{
+        margin: 0;
+    }
+    .form_inline{
+        input{
+            flex: 1 1 auto!important;
+        }
+    }
+}
+.loginbtn{
+  @include screen('mobile') {
+    display: none;
+}  
+}
+
+.fancybox-slide{
+  @include screen('mobile') {
+    padding: 0;
+}  
+}
+
+.loading{
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+    border-radius: 5px;
+    p{
+        margin: .5em;
+    }
 }

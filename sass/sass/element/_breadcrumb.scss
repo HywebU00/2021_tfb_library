@@ -1,6 +1,6 @@
 .breadcrumb {
     // border-bottom: 1px solid #EEE;
-    padding: .1em 0em .1em;
+    padding: .5em 0;
     font-size: .875em;
     margin: 0;
     ul {
@@ -27,10 +27,21 @@
 }
 .mp{
     .breadcrumb{
-        margin: -10px 0 0 10%;
+        margin: -10px 0 0 0;
+        padding: .1em 0;
         z-index: 999;
         @include screen('mobile') {
           margin: 10px 0 0 5%;  
       }
-  }
+      ul{
+        max-width: 80%;
+        margin: 0 auto;
+        @include screen('tablet') {
+           max-width: 88%; 
+       }
+       @include screen('mobile') {
+        max-width: 98%; 
+    }
+}
+}
 }

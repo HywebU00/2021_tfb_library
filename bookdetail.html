@@ -36,7 +36,7 @@
                     <div class="navlist">
                         <ul>
                             <li><a class="goCenter2" href="#center">跳至內容區</a></li>
-                            <li><a href="#">登入</a></li>
+                            <li class="loginbtn"><a data-fancybox data-type="iframe" data-src="popup_login.html" href="javascript:;" title="會員登入">登入</a></li>
                             <li><a href="#">線上註冊</a></li>
                             <li><a href="#">網站導覽</a></li>
                             <li class="help_p"><a href="#">輔助偏好設定</a></li>
@@ -53,8 +53,8 @@
                             </div>
 
                             <div class="flex-form">
-                               <!-- changeTextColor -->
-                               <div class="form_grp form_inline">
+                             <!-- changeTextColor -->
+                             <div class="form_grp form_inline">
                                 <label for="changeTextColor">文字顏色</label>
                                 <select id="changeTextColor">
                                     <option data-val="tC_default" selected="selected">預設文字顏色</option>
@@ -116,13 +116,7 @@
     <!-- main Start -->
     <div id="center" class="main innerpage">
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-        <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
-        <!-- //// class 都可以隨意命名 !!! ///// -->
-        <section class="col-12 main_image has_bg">
-            <div class="container">
-                <img src="images/has_bg2.jpg" alt="裝飾圖片-書">
-            </div>
-        </section>
+
         <div class="container">
             <!-- 主要內容區 -->
             <div class="center_block">
@@ -145,6 +139,7 @@
                 <div class="content-area">
                     <!-- CP Start -->
                     <section class="cp">
+                        <!-- bookdetail star -->
                         <div class="bookpic">
                             <!-- 此範例為4:3比例 -->
                             <picture>
@@ -155,40 +150,44 @@
                             </picture>
                             <span>圖說</span>
                         </div>
-                        <h2 class="title">階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作</h2>
-                        <ul class="info">
-                            <li>作者：這是作者這是作者這是作者這是作者</li>
-                            <li>出版社：這是出版社這是出版社這是出版社這是出版社</li>
-                            <li>出版年：這是出版年這是出版年</li>
-                        </ul>
-                        <h3>簡介</h3>
-                        <p>這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介----這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介----這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介...</p>
-                        <div class="more"><a href="#">顯示更多</a></div>
-                        <div class="bookfun">
-                            <div class="flex-form">
-                                <div class="form_grp form_inline">
-                                    <label for="selectSample">選單</label>
-                                    <select name="" id="selectSample">
-                                        <option value="有聲書線上聆聽">有聲書線上聆聽</option>
-                                        <option value="有聲書下載)">有聲書下載)</option>
-                                        <option value="電子點字書線上閱讀">電子點字書線上閱讀</option>
-                                        <option value="電子點字書下載">電子點字書下載</option>
-                                    </select>
-                                    <button class="btn btn-submit"><span class="i_check2"> 使用</span></button>
-                                    <button class="btn btn-submit"><span class="i_add2"> 加入我的收藏</span></button>
+
+                        <div class="bookdetail">
+                            <h2 class="title">階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作</h2>
+                            <ul class="info">
+                                <li>作者：這是作者這是作者這是作者這是作者</li>
+                                <li>出版社：這是出版社這是出版社這是出版社這是出版社</li>
+                                <li>出版年：這是出版年這是出版年</li>
+                            </ul>
+                            <h3>簡介</h3>
+                            <p>這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介----這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介----這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介這是簡介...<a href="#">顯示更多</a></p>
+                            <div class="bookfun">
+                                <div class="flex-form">
+                                    <div class="form_grp form_inline">
+                                        <label for="selectSample">選單</label>
+                                        <select name="" id="selectSample">
+                                            <option value="有聲書線上聆聽">有聲書線上聆聽</option>
+                                            <option value="有聲書下載)">有聲書下載)</option>
+                                            <option value="電子點字書線上閱讀">電子點字書線上閱讀</option>
+                                            <option value="電子點字書下載">電子點字書下載</option>
+                                        </select>
+                                        <button class="btn btn-submit"><span class="i_check2"> 使用</span></button>
+                                        <button class="btn btn-submit"><span class="i_add2"> 加入我的收藏</span></button>
+                                    </div>
                                 </div>
                             </div>
+                            <h3>其他資訊</h3>
+                            <ul class="info">
+                                <li>ISBN：9781625841346</li>
+                                <li>規格：439面 ;26公分 +選舉公報</li>
+                                <li>主題：歷史文學</li>
+                            </ul>
                         </div>
-                        <h3>其他資訊</h3>
-                        <ul class="info">
-                            <li>ISBN：9781625841346</li>
-                            <li>規格：439面 ;26公分 +選舉公報</li>
-                            <li>主題：歷史文學</li>
-                        </ul>
+                        <!-- bookdetail end -->
+
                         <hr>
                         <!-- book-recommend star -->
                         <div class="book-recommend">
-                            <h2>相/關/書/籍/推/薦</h2>
+                            <h2>相關書籍推薦</h2>
                             <div class="booklist">
                                 <ul>
                                     <li>

@@ -3,7 +3,10 @@
     @include screen('mobile') {
      margin: 1em 2em;   
  }
- table {
+ h2{
+    margin-bottom: .5em;
+}
+table {
     td {
         a {
             @include aSetting_nocolor;
@@ -30,7 +33,8 @@
         list-style-type: none;
         padding: 0;
         border-top: 2px solid $primaryColor;
-        font-size: 1.125em;
+        margin: 0;
+        // font-size: 1.125em;
         &>li {
             padding: 1em 0;
             border-bottom: 1px solid #DDD;
@@ -40,53 +44,64 @@
                 }
                 &>a {
                     display: block;
-                    padding-left: 2em;
+                    padding-left: 6em;
                     position: relative;
                     line-height: 1.45em;
-                    color: $color-word;
-                    &:hover {
-                        color: $aHover;
-                    }
-                    .num {
-                        width: 1.5em;
-                        text-align: right;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        &:after {
-                            content: ".";
-                            display: inline-block;
-                        }
-                    }
-                }
-                span.dept {
-                    display: inline-block;
-                    font-size: .938em;
+                    color: #844818;
+                    font-size: 1.25em;
+                    font-weight: bold;
                     @include screen("mobile") {
-                        display: block;
+                      padding-left: 0;  
+                  }
+                  &:hover {
+                    color: $aHover;
+                }
+                .num {
+                    width: 1.5em;
+                    text-align: right;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    &:after {
+                        content: ".";
+                        display: inline-block;
                     }
                 }
-                time {
-                    display: inline-block;
-                    color:$color-gray;
-                    font-size: .938em;
+            }
+            span.dept {
+                display: inline-block;
+                font-size: .938em;
+                @include screen("mobile") {
+                    display: block;
+                }
+            }
+            time {
+                color:$color-gray;
+                font-size: .938em;
+                position: absolute;
+                top:1.2em;
+                left:0;
+                @include screen("mobile") {
+                    position: static;
                 }
             }
         }
     }
 }
+}
 .title2{
-    text-align: center!important;
-    margin-top: .2em;
+    // text-align: center!important;
+    margin: .2em 0;
 }
 .title3{
-    text-align: center!important;
+    // text-align: center!important;
     margin: .4em 0 .2em;
 }
+
 .sub-search{
     width: 240px;
     float: right;
-    margin-top: -4em;
+    margin-top: -3.54em;
     font-size: .938em;
     overflow: hidden;
     @include screen("mobile") {

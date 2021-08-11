@@ -36,7 +36,7 @@
                     <div class="navlist">
                         <ul>
                             <li><a class="goCenter2" href="#center">跳至內容區</a></li>
-                            <li><a href="#">登入</a></li>
+                            <li class="loginbtn"><a data-fancybox data-type="iframe" data-src="popup_login.html" href="javascript:;" title="會員登入">登入</a></li>
                             <li><a href="#">線上註冊</a></li>
                             <li><a href="#">網站導覽</a></li>
                             <li class="help_p"><a href="#">輔助偏好設定</a></li>
@@ -53,8 +53,8 @@
                             </div>
 
                             <div class="flex-form">
-                             <!-- changeTextColor -->
-                             <div class="form_grp form_inline">
+                               <!-- changeTextColor -->
+                               <div class="form_grp form_inline">
                                 <label for="changeTextColor">文字顏色</label>
                                 <select id="changeTextColor">
                                     <option data-val="tC_default" selected="selected">預設文字顏色</option>
@@ -116,13 +116,7 @@
     <!-- main Start -->
     <div id="center" class="main innerpage">
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-        <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
-        <!-- //// class 都可以隨意命名 !!! ///// -->
-        <section class="col-12 main_image has_bg">
-            <div class="container">
-                <img src="images/has_bg2.jpg" alt="裝飾圖片-書">
-            </div>
-        </section>
+
         <div class="container">
             <!-- 主要內容區 -->
             <div class="center_block">
@@ -139,8 +133,8 @@
             <section class="online">
                 <div class="container">
                     <div class="col">
-                        <h2>帳/號/維/護</h2>
                         <div class="content-area">
+                            <h2 tabindex="0">帳號維護</h2>
                             <!-- form star -->
                             <div class="formbox">
                                 <form action="">

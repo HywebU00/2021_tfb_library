@@ -36,11 +36,13 @@
                     <div class="navlist">
                         <ul>
                             <li><a class="goCenter2" href="#center">跳至內容區</a></li>
-                            <li><a href="#">登入</a></li>
+                            <li class="loginbtn"><a data-fancybox data-type="iframe" data-src="popup_login.html" href="javascript:;" title="會員登入">登入</a></li>
                             <li><a href="#">線上註冊</a></li>
                             <li><a href="#">網站導覽</a></li>
                             <li class="help_p"><a href="#">輔助偏好設定</a></li>
                         </ul>
+
+                        <!-- 手機版login star -->
                         <div class="f-panel">
                             <!-- font_size -->
                             <div class="font_size">
@@ -87,7 +89,7 @@
             </nav>
             <!-- navigation End -->
             <h1>
-                <a href="index.htm"><img src="images/logo.png" alt="網站標題" /></a>
+                <a href="index.htm"><img src="images/logo.png" alt="愛盲基金會-有聲點字圖書館" /></a>
             </h1>
 
             <!-- noscript -->
@@ -120,14 +122,19 @@
         <!-- //// class 都可以隨意命名 !!! ///// -->
         <section class="col-12 main_image has_bg">
             <div class="container">
-                <img src="images/has_bg.jpg" alt="裝飾圖片-書">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/has_bg.jpg"></source>
+                    <source media="(max-width: 767px)" srcset="images/has_bg.jpg"></source>
+                    <img data-src="images/has_bg.jpg" class="lazy" alt="圖片說明">
+                    <noscript><img src="images/has_bg.jpg" alt="圖片說明"></noscript>
+                </picture>
             </div>
         </section>
 
-        <!-- Search Start -->
+        <!-- mpSearch Start -->
         <section>
             <div class="container">
-                <div class="search">
+                <div class="mpsearch">
                     <h2>書/籍/查/詢</h2>
                     <form action="" class="form_inline">
                         <select name="" id="selectSample">
@@ -147,14 +154,16 @@
                 </div>
             </div>
         </section>
-        <!-- Search End -->
+        <!-- mpSearch End -->
 
         <!-- breadcrumb路徑 -->
         <div class="breadcrumb">
-          <ul>
-            <li>現在位置</li>
-            <li><a href="#">首頁</a></li>
-        </ul>
+            <div class="container">
+              <ul>
+                <li>現在位置</li>
+                <li><a href="#">首頁</a></li>
+            </ul>
+        </div>
     </div>
     <!-- breadcrumb路徑 end-->
 

@@ -1,12 +1,12 @@
 .pagination {
-    margin: .5em auto;
+    margin: 0 0 .2em .2em;
     padding: 0;
     display: block;
-    text-align: center;
+    text-align: left;
     font-size: .938em;
     @extend %clearfix; // outline: 1px solid red;
     .form_inline{
-        justify-content: center;
+        justify-content: left;
     }
     span {
         color: $primaryColor;

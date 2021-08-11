@@ -42,7 +42,7 @@ $(function() {
     ////////////// 行動版選單切換////////////
     /*-----------------------------------*/
     _body.prepend('<aside class="sidebar"><div class="m_area"><button type="button" class="sidebarClose">關閉</button></div><div class="menu_overlay"></div></aside>');
-    $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button><button type="button" class="searchCtrl">查詢</button>');
+    $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button><a class="loginCtrl" data-fancybox data-type="iframe" data-src="popup_login.html" href="javascript:;" title="會員登入">登入</a>');
     var menu_status = false,
     _sidebar = $('.sidebar'),
     _search = $('.search'),
@@ -112,10 +112,11 @@ $(function() {
         _menu.find('li ul').hide();
     });
     // 先複製過去
-    _nav.clone().prependTo(_mArea);
     _menu.clone().prependTo(_mArea);
+    _nav.clone().prependTo(_mArea);
+
     _megamenu.clone().prependTo(_mArea);
-    _search.clone().prependTo(_body).addClass('m_search');
+    // _search.clone().prependTo(_body).addClass('m_search');
     var liHasChild_level1 = $('aside .menu ul').children('li.hasChild'),
     liHasChild_level2 = $('aside .menu ul ul').children('li.hasChild'),
     liHasChild_level3 = $('aside .menu ul ul ul').children('li.hasChild'),

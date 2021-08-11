@@ -36,7 +36,7 @@
                     <div class="navlist">
                         <ul>
                             <li><a class="goCenter2" href="#center">跳至內容區</a></li>
-                            <li><a href="#">登入</a></li>
+                            <li class="loginbtn"><a data-fancybox data-type="iframe" data-src="popup_login.html" href="javascript:;" title="會員登入">登入</a></li>
                             <li><a href="#">線上註冊</a></li>
                             <li><a href="#">網站導覽</a></li>
                             <li class="help_p"><a href="#">輔助偏好設定</a></li>
@@ -53,8 +53,8 @@
                             </div>
 
                             <div class="flex-form">
-                               <!-- changeTextColor -->
-                               <div class="form_grp form_inline">
+                             <!-- changeTextColor -->
+                             <div class="form_grp form_inline">
                                 <label for="changeTextColor">文字顏色</label>
                                 <select id="changeTextColor">
                                     <option data-val="tC_default" selected="selected">預設文字顏色</option>
@@ -116,13 +116,7 @@
     <!-- main Start -->
     <div id="center" class="main innerpage">
         <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
-        <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
-        <!-- //// class 都可以隨意命名 !!! ///// -->
-        <section class="col-12 main_image has_bg">
-            <div class="container">
-                <img src="images/has_bg2.jpg" alt="裝飾圖片-書">
-            </div>
-        </section>
+
         <div class="container">
             <!-- 主要內容區 -->
             <div class="center_block">
@@ -134,45 +128,55 @@
                     </ul>
                 </div>
                 <!-- breadcrumb路徑 end-->
-                <!-- bookSearch Start -->
-                <div class="booksearch" role="search">
-                    <div class="form_grp form_inline">
-                        <label for="mustSameAsId">搜尋</label>
-                        <select name="" id="selectSample">
-                            <option value="書名">書名</option>
-                            <option value="作者">作者</option>
-                            <option value="出版社">出版社</option>
-                        </select>
-                        <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S" title="請輸入文字" aria-label="搜尋網站內容">
-                        <input name="" type="submit" value="查詢" class="btn btn-search" />
-                        <input name="" type="submit" value="進階搜尋" class="btn" />
-                    </div>
-                </div>
-                <!-- bookSearch End -->
-                <h2 class="title3">查/詢/結/果</h2>
-                <hr>
-                <div class="req">
-                    <div class="form_grp form_inline">
-                        <label for="selectSample">篩選條件</label>
-                        <select name="" id="selectSample">
-                            <option value="依相關度 排序">依相關度 排序</option>
-                            <option value="由新到舊 排序">由新到舊 排序</option>
-                            <option value="由舊到新 排序">由舊到新 排序</option>
-                            <option value="依熱門度 排序">依熱門度 排序</option>
-                            <option value="依題名(由大到小) 排序">依題名(由大到小) 排序</option>
-                            <option value="依題名(由小到大) 排序">依題名(由小到大) 排序</option>
-                        </select>
-                        <select name="" id="selectSample">
-                            <option value="圖文式">圖文式</option>
-                            <option value="條列式">條列式</option>
-                        </select>
-                        <button class="btn btn-submit">縮小範圍</button>
-                    </div>
-                </div>
+
                 <!-- content-area star -->
                 <div class="content-area">
                     <!-- LP Start -->
                     <section class="lp">
+                        <!-- bookSearch Start -->
+                        <div class="booksearch" role="search">
+                            <div class="form_grp form_inline">
+                                <label for="mustSameAsId">搜尋</label>
+                                <select name="" id="selectSample">
+                                    <option value="書名">書名</option>
+                                    <option value="作者">作者</option>
+                                    <option value="出版社">出版社</option>
+                                </select>
+                                <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S" title="請輸入文字" aria-label="搜尋網站內容">
+                                <input name="" type="submit" value="查詢" class="btn btn-search" />
+                                <input name="" type="submit" value="進階搜尋" class="btn" />
+                            </div>
+                        </div>
+                        <!-- bookSearch End -->
+                        <h2 tabindex="0" class="title3">查詢結果</h2>
+                        <hr>
+                        <div class="req">
+                            <div class="form_grp form_inline">
+                                <label for="selectSample">篩選條件</label>
+                                <select name="" id="selectSample">
+                                    <option value="依相關度 排序">依相關度 排序</option>
+                                    <option value="由新到舊 排序">由新到舊 排序</option>
+                                    <option value="由舊到新 排序">由舊到新 排序</option>
+                                    <option value="依熱門度 排序">依熱門度 排序</option>
+                                    <option value="依題名(由大到小) 排序">依題名(由大到小) 排序</option>
+                                    <option value="依題名(由小到大) 排序">依題名(由小到大) 排序</option>
+                                </select>
+                                <select name="" id="selectSample">
+                                    <option value="圖文式">圖文式</option>
+                                    <option value="條列式">條列式</option>
+                                </select>
+                                <button class="btn btn-submit">縮小範圍</button>
+                            </div>
+                        </div>
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <form action="">
+                                <div class="form_inline">
+                                    <div class="total"> 共<span>308</span>筆資料</div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Pagination end-->
                         <!-- 書籍列表 -->
                         <div class="img_list2">
                             <ul>
@@ -279,68 +283,45 @@
                         <!-- 書籍列表 end-->
                     </section>
                     <!-- LP End -->
-                    <!-- Pagination -->
-                    <div class="pagination">
-                        <form action="">
-                            <div class="form_inline">
-                                <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select name="" id="" aria-label="每頁顯示">
-                                    <option value="">10</option>
-                                    <option value="">20</option>
-                                    <option value="">30</option>
-                                    <option value="">40</option>
-                                </select> 筆， <input type="button" value="確定" class="btn btn-submit">
-                            </div>
-                        </div>
-                    </form>
-                    <ul class="page">
-                        <li class="first"><a href="#" title="第一頁">第一頁 </a></li>
-                        <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
-                        <li><a href="#">10</a></li>
-                        <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
-                    </ul>
+                    <!-- loading star -->
+                    <div class="loading">
+                        <img src="images/loading.gif" alt="loading">
+                        <p>檔案下載中，請稍候</p>
+                    </div>
+                    <!-- loading end -->
+
                 </div>
-                <!-- Pagination end-->
+                <!-- content-area end -->
+
             </div>
-            <!-- content-area end -->
-
-        </div>
-        <!-- 主要內容區 end-->
-    </div>
-</div>
-
-
-<!-- footer Start-->
-<footer>
-    <div class="container">
-        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
-        <div class="footer_info">
-            <p>
-                電話：02-7725-8000、02-2361-6663<br>
-                傳真：02-2375-3925、02-2331-6593<br>
-                地址：台北市中正區忠孝西路一段50號13樓之19<br>
-                劃撥帳號：15935356 (為本會一般捐款，依目前會務事項而使用)<br>
-                劃撥帳號：14365043 (為本會專案專款專用的帳號)<br>
-                Email : eyelove@tfb.org.tw<br>
-                Copyright © 2021 Greatest Idea Strategy Co.,Ltd All rights reserved.
-            </p>
-        </div>
-        <div class="footer_icon">
-            <a target="_blank" href="javascript:;" title="另開視窗">
-                <img src="images/accessibility2.jpg" alt="無障礙標章">
-            </a>
+            <!-- 主要內容區 end-->
         </div>
     </div>
-</footer>
-<!-- footer End -->
+
+
+    <!-- footer Start-->
+    <footer>
+        <div class="container">
+            <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+            <div class="footer_info">
+                <p>
+                    電話：02-7725-8000、02-2361-6663<br>
+                    傳真：02-2375-3925、02-2331-6593<br>
+                    地址：台北市中正區忠孝西路一段50號13樓之19<br>
+                    劃撥帳號：15935356 (為本會一般捐款，依目前會務事項而使用)<br>
+                    劃撥帳號：14365043 (為本會專案專款專用的帳號)<br>
+                    Email : eyelove@tfb.org.tw<br>
+                    Copyright © 2021 Greatest Idea Strategy Co.,Ltd All rights reserved.
+                </p>
+            </div>
+            <div class="footer_icon">
+                <a target="_blank" href="javascript:;" title="另開視窗">
+                    <img src="images/accessibility2.jpg" alt="無障礙標章">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
 </div>
 <a href="javascript:;" class="scrollToTop">回頁首</a>
 <!-- JQ -->
