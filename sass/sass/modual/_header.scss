@@ -261,6 +261,7 @@
         // width: 100%;
         text-align: center!important;
         margin: 1em 0 .5em;
+        letter-spacing: 0.2em!important;
         @include screen('mobile') {
             color:$color-white;
         }
@@ -279,7 +280,7 @@
             outline: 2px solid $aFocus;
         }
         @include screen('xs_mobile') {
-            width:270px;
+            width:100px;
             border-radius: 3px;
             border: 1px solid #9e9e9e;
         }
@@ -290,13 +291,14 @@
         justify-content: center;
         flex-wrap: nowrap;
         @include screen('xs_mobile') {
+            justify-content: left;
             flex-wrap: wrap;
         }
 
     }
     .form_grp {
         flex:0 0 calc(100% - 250px);
-        // margin:0;
+        margin:0;
         input {
             margin: 0;
 
@@ -308,6 +310,11 @@
                 border-radius: 0 3px 3px 0;
                 @include screen('mobile') {
                     border-radius: 3px;
+                    // flex:0 0 calc(100% - 85px);
+                }
+                @include screen('xs_mobile') {
+                    margin-left: 5px;
+                    max-width: 200px;
                 }
             }
             &[type="submit"] {
@@ -330,41 +337,46 @@
             }
         }
         @include screen('xs_mobile') {
-            width: 250px;
-            margin-bottom: .5em;
-            input {
-              &[type="submit"] {
-                 width: auto !important; 
-             }
-         }
+        // width: 250px!important;
+        // margin-bottom: .5em;
+        input {
+          &[type="submit"] {
+            width: 60px !important; 
+            padding: 0;
+            min-width: 60px;
+        }
+    }
 
-     }
- }
- .btn_grp {
+}
+}
+.btn_grp {
     flex:0 0 auto;
     padding:0 .5em 0;
     margin: 0;
-    input, input[type="submit"] {
-        min-width: auto;
-        padding: .2em .8em;
-        margin: 0;
+    @include screen('xs_mobile') {
+       margin: .5em auto 0;   
+   }
+   input, input[type="submit"] {
+    min-width: auto;
+    padding: .2em .8em;
+    margin: 0;
 
-        &:focus {
-            outline: 2px solid $aFocus;
-        }
+    &:focus {
+        outline: 2px solid $aFocus;
     }
-    .adv{
-        background: $color-white;
-        border-radius:3px;
-        border: solid 3px #e5e5e5;
-        color:$color-blue;
-        height: 50px;
-        &:hover, &:focus {
-          background: $color-blue;
-          color:$color-white;
-          border: solid 3px $color-blue;
-      }
+}
+.adv{
+    background: $color-white;
+    border-radius:3px;
+    border: solid 3px #e5e5e5;
+    color:$color-blue;
+    height: 50px;
+    &:hover, &:focus {
+      background: $color-blue;
+      color:$color-white;
+      border: solid 3px $color-blue;
   }
+}
 }
 .keywordHot {
     flex:1 1 100%;

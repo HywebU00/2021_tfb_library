@@ -1,39 +1,39 @@
 .lp {
-    margin: 1em 3em;
+    margin: 1em 2em;
     @include screen('mobile') {
-     margin: 1em 2em;   
- }
- h2{
-    margin-bottom: .5em;
-}
-table {
-    td {
-        a {
-            @include aSetting_nocolor;
-        }
-        &.date {
-            text-align: center;
-            color: #666;
-            @include screen('mobile') {
-                text-align: left;
+        margin: 0em 1em;   
+    }
+    h2{
+        margin-bottom: .5em;
+    }
+    table {
+        td {
+            a {
+                @include aSetting_nocolor;
             }
-        }
-        &.num {
-            text-align: center;
-            color: #666;
-            @include screen('mobile') {
-                text-align: left;
+            &.date {
+                text-align: center;
+                color: #666;
+                @include screen('mobile') {
+                    text-align: left;
+                }
+            }
+            &.num {
+                text-align: center;
+                color: #666;
+                @include screen('mobile') {
+                    text-align: left;
+                }
             }
         }
     }
-}
-.list {
-    clear: both;
-    &>ul, ol {
-        list-style-type: none;
-        padding: 0;
-        border-top: 2px solid $primaryColor;
-        margin: 0;
+    .list {
+        clear: both;
+        &>ul, ol {
+            list-style-type: none;
+            padding: 0;
+            border-top: 2px solid $primaryColor;
+            margin: 0;
         // font-size: 1.125em;
         &>li {
             padding: 1em 0;
@@ -121,6 +121,8 @@ table {
 .btn-search{
     background: $secondaryColor;
     border: 1px solid $secondaryColor;
+    min-width: 3em;
+    padding: .5em 0;
     &:hover, &:focus{
         background: darken($secondaryColor, 8);
         border: 1px solid darken($secondaryColor, 8);

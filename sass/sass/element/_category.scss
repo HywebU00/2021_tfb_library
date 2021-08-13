@@ -3,34 +3,35 @@
     margin: .5em auto;
     padding-right: 250px;
     @include screen('mobile') {
-       padding-right: 0; 
-   }
-   ul {
+     padding-right: 0; 
+ }
+ ul {
     @include li-reset;
+    text-align: right;
     li {
         margin: 0 3px 3px 0;
-        display: block;
-        float: right;
+        display: inline-block;
+        // float: right;
         @include screen('mobile') {
             float: left;
         }
     }
 }
 a {
-    border: 1px solid  $primaryColor;
-    padding: .4em 1em;
+    // border: 1px solid  $primaryColor;
+    padding: .4em .5em;
     display: block;
     color: $color-black;
     box-sizing: border-box;
-    border-radius:4px;
+    // border-radius:4px;
     // background: $primaryColor;
     &:hover,
     &:focus {
-        color: #FFF;
-        background: darken($primaryColor, 8);
-        border: 1px solid darken($primaryColor, 8);
+        color: $primaryColor;
+        // background: darken($primaryColor, 8);
+        // border: 1px solid darken($primaryColor, 8);
         box-shadow: none;
-        text-decoration: none;
+        text-decoration: underline;
     }
     &.active {
         color: #FFF;

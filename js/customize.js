@@ -190,3 +190,57 @@ $(function() {
 
 
 });
+
+
+//顯示部份內容
+$(document).ready(function(){
+  var _window = $(window);
+      // 可開合的說明文字區
+      // 預設顯示三行
+      // 目前一頁只能有一個 .expansile
+      var _expansile = $('.expansile').addClass('partial');
+      var textLess = '局部顯示';
+      var textAll = '顯示更多';
+      var hFull;
+      var hPartial = _expansile.height();
+      _expansile.wrapInner('<div class="innerPart"></div>')
+      _expansile.append('<span class="fadeout"></span>').append('<span class="readAll"></span>');
+      var _readAll = _expansile.find('.readAll').text(textAll);
+
+      _expansile.each(function(){
+        var _this = $(this);
+        hFull = _this.find('.innerPart').innerHeight();
+        _readAll.click(function(){
+          if (_this.hasClass('partial')){
+            _this.animate({height: hFull}, 500, function(){
+              _this.removeClass('partial');
+              _readAll.text(textLess);
+          })
+        } else {
+            _this.animate({height: hPartial}, 500, function(){
+              _this.addClass('partial');
+              _readAll.text(textAll);
+          })
+        }
+    })
+    });
+
+      function getExpansileNewHeight(){
+        hFull = _expansile.find('.innerPart').innerHeight();
+        if(_expansile.hasClass('partial')){
+          _expansile.removeAttr('style');
+      } else {
+          _expansile.height(hFull);
+      }
+  }
+
+      // window resize
+      var winResizeTimer;
+      _window.resize(function(){
+        clearTimeout(winResizeTimer);
+        winResizeTimer = setTimeout(function(){
+          getExpansileNewHeight();
+      })
+    });
+  })
+
