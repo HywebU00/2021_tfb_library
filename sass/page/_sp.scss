@@ -17,9 +17,9 @@
             @include make-lg-column(4);
             padding: 15px;
             @include screen('mobile') {
-             padding:  5px 15px; 
-         }
-         a{
+               padding:  5px 15px; 
+           }
+           a{
             background: $primaryColor;
             display: block;
             font-family: 'Noto Serif TC', serif;
@@ -33,22 +33,22 @@
                 background: darken($primaryColor, 10);;
             }
             @include screen('mobile') {
-               padding: 1em .5em; 
-           }
-       }
-   }      
+             padding: 1em .5em; 
+         }
+     }
+ }      
 }
 }
 
 .content-area{
-   background: $color-white;
-   max-width: 100%;
-   box-shadow: 5px 0 50px rgba(0, 0, 0, .16);
-   margin: 0 auto 2em;
-   padding: 20px 0;
-   overflow: hidden;
-   @include screen('mobile') {
-    margin: 50px auto 3em;
+ background: $color-white;
+ max-width: 100%;
+ box-shadow: 5px 0 50px rgba(0, 0, 0, .16);
+ margin: 0 auto 2em;
+ padding: 20px 0;
+ overflow: hidden;
+ @include screen('mobile') {
+    margin: 0px auto 3em;
 }
 }
 
@@ -70,8 +70,8 @@
     padding-bottom: .5em;
     margin: 0 0 .5em;
     @include screen('mobile') {
-     font-size: 1.8em;  
- }
+       font-size: 1.8em;  
+   }
 }
 
 .int{
@@ -107,8 +107,8 @@
 .consult{
     text-align: center;
     h3{
-       margin: .5em 0; 
-   }
+     margin: .5em 0; 
+ }
 }
 
 .formbox{
@@ -160,13 +160,13 @@
         }
     }
     .booklist{
-     background: $color-white;
-     max-width: 100%;
-     box-shadow: 5px 0 20px rgba(0, 0, 0, .16);
-     margin: 0 auto 1em;
-     padding: 30px 0 20px;
-     overflow: hidden;
-     ul{
+       background: $color-white;
+       max-width: 100%;
+       box-shadow: 5px 0 20px rgba(0, 0, 0, .16);
+       margin: 0 auto 1em;
+       padding: 30px 0 20px;
+       overflow: hidden;
+       ul{
         list-style: none;
         margin: 0 20px;
         padding: 0;
@@ -265,9 +265,9 @@
         line-height: 1.8em;
         overflow: hidden;
         @include screen('mobile') {
-           margin: 0 0 1em 1em; 
-       }
-       >li{
+         margin: 0 0 1em 1em; 
+     }
+     >li{
         @include make-xs-column(12);
         @include make-sm-column(6);
         @include make-md-column(6);
@@ -309,9 +309,9 @@
 }
 }
 .more2{
-   float: right;
-   margin-right: 1em;
-   a{
+ float: right;
+ margin-right: 1em;
+ a{
     display: block;
     font-size: .875em;
     color:#fff;
@@ -444,9 +444,9 @@
     }
     @include screen('mobile') {
         img{
-           max-width: 100%; 
-       }
-   }
+         max-width: 100%; 
+     }
+ }
 }
 
 .chapter{
@@ -466,10 +466,10 @@
 .brl{
     margin: 1em 3em 2em;
     @include screen('mobile') {
-     margin: 1em 1.5em 2em; 
- }
+       margin: 1em 1.5em 2em; 
+   }
 
- .btn_grp{
+   .btn_grp{
     text-align: left;
     .btn{
         border-radius: 30px;

@@ -327,7 +327,7 @@ $(function() {
             } else {
                 $('.header').removeClass('fixed');
                 $('.header').css('margin-top', 0);
-                $('.main').css('margin-top', 0);
+                // $('.main').css('margin-top', 0);
             }
         });
     }

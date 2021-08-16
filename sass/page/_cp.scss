@@ -345,6 +345,9 @@ h1.title, h2.title {
     font-size: 0;
   }
   select{}
+  @include screen('mobile') {
+   margin: 1em -15px;
+ }
 }
 
 .expansile{position:relative;height:4.2em;overflow:hidden;margin:0 auto;padding:0;width:100%; }

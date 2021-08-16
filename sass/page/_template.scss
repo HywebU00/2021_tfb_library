@@ -54,6 +54,9 @@ body {
         font-weight: 600;
         color:$primaryColor;
     }
+    @include screen('mobile') {
+     margin: 70px auto 0; 
+ }
 
 }
 
