@@ -10,7 +10,7 @@ $btn-radius:.2em;
 }
 
 // 按鈕的共用設定
-@mixin btn_setting($btn-bg:#e0e0e0, $btn-font-color:$btn-font-color) {
+@mixin btn_setting($btn-bg:#eee, $btn-font-color:$btn-font-color) {
     background: $btn-bg;
     border: 1px solid $btn-bg;
     color: $btn-font-color;

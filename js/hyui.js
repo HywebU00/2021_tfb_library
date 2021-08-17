@@ -41,8 +41,10 @@ $(function() {
     /*-----------------------------------*/
     ////////////// 行動版選單切換////////////
     /*-----------------------------------*/
-    _body.prepend('<aside class="sidebar"><div class="m_area"><button type="button" class="sidebarClose">關閉</button></div><div class="menu_overlay"></div></aside>');
-    $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button><a class="loginCtrl" data-fancybox data-type="iframe" data-src="popup_login.html" href="javascript:;" title="會員登入">登入</a>');
+    _body.prepend("<aside class=\"sidebar\"><div class=\"m_area\"><button type=\"button\" class=\"sidebarClose\">關閉</button></div><div class=\"menu_overlay\"></div></aside>");
+    $('header .container').prepend("<button type=\"button\" class=\"sidebarCtrl\">側欄選單</button><button class=\"loginCtrl\" onclick=\"openDialog('dialog2', this)\" title=\"會員登入\">登入</button>");
+
+    // $('header .container').prepend('<button type="button" class="sidebarCtrl">側欄選單</button><a class="loginCtrl" data-fancybox data-type="iframe" data-src="popup_login.html" href="javascript:;" title="會員登入">登入</a>');
     var menu_status = false,
     _sidebar = $('.sidebar'),
     _search = $('.search'),
