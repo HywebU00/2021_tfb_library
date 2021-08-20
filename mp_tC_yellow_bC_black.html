@@ -1,0 +1,428 @@
+<!doctype html>
+    <html lang="zh-Hant" class="no-js">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>愛盲基金會-有聲點字圖書館</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- dialog css -->
+    <link rel="stylesheet" href="vendor/dialog/dialog.css">
+    <script src="vendor/dialog/dialog.js"></script><!-- dialog js -->
+
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body class="tC_yellow bC_black">
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <!-- navigation Start -->
+                <nav class="navigation" role="navigation" aria-label="Site">
+                    <!-- 新增div navlist -->
+                    <div class="navlist">
+                        <ul>
+                            <li><a class="goCenter2" href="#center">跳至內容區</a></li>
+                            <li class="loginbtn"><a href="javascript:;" onclick="openDialog('dialog2', this)" title="會員登入">登入</a></li>
+                            <li><a href="#">線上註冊</a></li>
+                            <li><a href="#">網站導覽</a></li>
+                            <li class="help_p"><a href="#">輔助偏好設定</a></li>
+                        </ul>
+
+
+                        <!-- 手機版login star -->
+                        <div class="f-panel">
+                            <!-- font_size -->
+                            <div class="font_size">
+                                <span>設定文字大小</span>
+                                <ul>
+                                    <li><a href="#" class="small">小</a></li>
+                                    <li><a href="#" class="medium">中</a></li>
+                                    <li><a href="#" class="large">大</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="flex-form">
+                             <!-- changeTextColor -->
+                             <div class="form_grp form_inline">
+                                <label for="changeTextColor">文字顏色</label>
+                                <select id="changeTextColor">
+                                    <option data-val="tC_default" selected="selected">預設文字顏色</option>
+                                    <option data-val="tC_white">白色(White)</option>
+                                    <option data-val="tC_black">黑色(Black)</option>
+                                    <option data-val="tC_yellow">黃色(Yellow)</option>
+                                    <option data-val="tC_lime">綠色(Lime)</option>
+                                </select>
+                            </div>
+                            <!-- changeBackgroundColor -->
+                            <div class="form_grp form_inline">
+                                <label for="changeBackgroundColor">背景顏色</label>
+                                <select id="changeBackgroundColor">
+                                    <option data-val="bC_default" selected="selected">預設背景顏色</option>
+                                    <option data-val="bC_white">白色(White)</option>
+                                    <option data-val="bC_black">黑色(Black)</option>
+                                </select>
+                            </div>
+                            <hr>   
+                            <div class="btn_grp form_inline">
+                                <button class="btn btn-submit">套用設定</button>
+                                <button class="btn btn-reset">預設樣式</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </nav>
+            <!-- navigation End -->
+            <h1>
+                <a href="index.htm"><img src="images/logo.png" alt="愛盲基金會-有聲點字圖書館" /></a>
+            </h1>
+
+            <!-- noscript -->
+            <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+            </noscript>
+            <!-- menu Start -->
+            <nav class="menu" role="navigation" aria-label="About page">
+                <ul>
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">書籍瀏覽</a></li>
+                    <li><a href="#">愛盲精選</a>
+                        <ul>
+                            <li><a href="#">次選單</a></li>
+                            <li><a href="#">次選單</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">最新消息</a></li>
+                    <li><a href="#">意見回饋</a></li>
+                    <li><a href="#">圖書推薦</a></li>
+                </ul>
+            </nav>
+            <!-- menu End -->
+        </div>
+    </header>
+    <!-- header End -->
+    <!-- main Start -->
+    <div id="center" class="main mp">
+        <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+        <!-- 任何一個section下一層都要包下一層都要包div container作對齊 -->
+        <!-- //// class 都可以隨意命名 !!! ///// -->
+        <section class="col-12 main_image has_bg">
+            <div class="container">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="images/has_bg.jpg"></source>
+                    <source media="(max-width: 767px)" srcset="images/has_bg.jpg"></source>
+                    <img data-src="images/has_bg.jpg" class="lazy" alt="圖片說明">
+                    <noscript><img src="images/has_bg.jpg" alt="圖片說明"></noscript>
+                </picture>
+            </div>
+        </section>
+
+        <!-- mpSearch Start -->
+        <section>
+            <div class="container">
+                <div class="mpsearch">
+                    <h2 tabindex="0">書籍查詢</h2>
+                    <form action="" class="form_inline">
+                        <select name="" id="selectSample">
+                            <option value="" aria-labelledby="館藏查詢">書名</option>
+                            <option value="" aria-labelledby="選項二">選項二</option>
+                            <option value="" aria-labelledby="選項三">選項三</option>
+                        </select>
+                        <div class="form_grp">
+                            <label for="mustSameAsId">搜尋</label>
+                            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入查詢詞" accesskey="S">
+                            <input name="" type="submit" title="查詢" value="查詢" class="sbtn" />
+                        </div>
+                        <div class="btn_grp">
+                            <input name="" type="submit" value="進階搜尋" class="adv" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- mpSearch End -->
+
+        <!-- breadcrumb路徑 -->
+        <div class="breadcrumb">
+            <div class="container">
+              <ul>
+                <li>現在位置</li>
+                <li><a href="#">首頁</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- breadcrumb路徑 end-->
+
+    <!-- newbook star -->
+    <section class="newbook">
+        <div class="container">
+            <div class="col">
+             <h2 tabindex="0">新到圖書</h2>
+
+             <div class="booklist">
+                <ul>
+                    <li>
+                        <a href="javascript:;" onclick="openDialog('dialog1', this)" title="階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作">
+                            <div class="img-container">
+                                <img data-src="images/book_1.jpg" class="lazy contain loaded" src="images/book_1.jpg" data-was-processed="true" alt="階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作">
+                                <noscript><img src="images/book_1.jpg" class="contain" alt="階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作"></noscript>
+                            </div>
+                            <p>階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="openDialog('dialog1', this)" title="皮克威克奶奶 Mrs. Piggle-Wiggle">
+                            <div class="img-container">
+                                <img data-src="images/book_2.jpg" class="lazy contain loaded" src="images/book_2.jpg" data-was-processed="true" alt="皮克威克奶奶 Mrs. Piggle-Wiggle">
+                                <noscript><img src="images/book_2.jpg" class="contain" alt="皮克威克奶奶 Mrs. Piggle-Wiggle"></noscript>
+                            </div>
+                            <p>皮克威克奶奶 Mrs. Piggle-Wiggle</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="openDialog('dialog1', this)" title="書名，一行10個字，超過則斷行最多3行，超過則以...顯示">
+                            <div class="img-container">
+                                <img data-src="images/book_3.jpg" class="lazy contain loaded" src="images/book_3.jpg" data-was-processed="true" alt="書名，一行10個字，超過則斷行最多3行，超過則以...顯示">
+                                <noscript><img src="images/book_3.jpg" class="contain" alt="書名，一行10個字，超過則斷行最多3行，超過則以...顯示"></noscript>
+                            </div>
+                            <p>書名，一行10個字，超過則斷行最多3行，超過則以...顯示</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="openDialog('dialog1', this)" title="白頭浪">
+                            <div class="img-container">
+                                <img data-src="images/book_4.jpg" class="lazy contain loaded" src="images/book_4.jpg" data-was-processed="true" alt="白頭浪">
+                                <noscript><img src="images/book_4.jpg" class="contain" alt="白頭浪"></noscript>
+                            </div>
+                            <p>白頭浪</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="more"><a href="#">更多新到圖書</a></div>
+        </div>
+    </div>
+</section>
+<!-- newbook end -->
+
+
+<!-- hotbook star -->
+<section class="hotbook">
+    <div class="container">
+        <div class="col">
+            <h2 tabindex="0">熱門圖書</h2>
+
+            <div class="booklist">
+                <ul>
+                    <li>
+                        <a href="javascript:;" onclick="openDialog('dialog1', this)" title="階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作">
+                            <div class="img-container">
+                                <img data-src="images/book_1.jpg" class="lazy contain loaded" src="images/book_1.jpg" data-was-processed="true" alt="階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作">
+                                <noscript><img src="images/book_1.jpg" class="contain" alt="階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作"></noscript>
+                            </div>
+                            <p>階梯寫作微書寫時代的邏輯、思辨與作文力－楊曉菁老師的18堂寫作</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="openDialog('dialog1', this)" title="皮克威克奶奶 Mrs. Piggle-Wiggle">
+                            <div class="img-container">
+                                <img data-src="images/book_2.jpg" class="lazy contain loaded" src="images/book_2.jpg" data-was-processed="true" alt="皮克威克奶奶 Mrs. Piggle-Wiggle">
+                                <noscript><img src="images/book_2.jpg" class="contain" alt="皮克威克奶奶 Mrs. Piggle-Wiggle"></noscript>
+                            </div>
+                            <p>皮克威克奶奶 Mrs. Piggle-Wiggle</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="openDialog('dialog1', this)" title="書名，一行10個字，超過則斷行最多3行，超過則以...顯示">
+                            <div class="img-container">
+                                <img data-src="images/book_3.jpg" class="lazy contain loaded" src="images/book_3.jpg" data-was-processed="true" alt="書名，一行10個字，超過則斷行最多3行，超過則以...顯示">
+                                <noscript><img src="images/book_3.jpg" class="contain" alt="書名，一行10個字，超過則斷行最多3行，超過則以...顯示"></noscript>
+                            </div>
+                            <p>書名，一行10個字，超過則斷行最多3行，超過則以...顯示</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" onclick="openDialog('dialog1', this)" title="白頭浪">
+                            <div class="img-container">
+                                <img data-src="images/book_4.jpg" class="lazy contain loaded" src="images/book_4.jpg" data-was-processed="true" alt="白頭浪">
+                                <noscript><img src="images/book_4.jpg" class="contain" alt="白頭浪"></noscript>
+                            </div>
+                            <p>白頭浪</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="more"><a href="#">更多新熱門圖書</a></div>
+        </div>
+    </div>
+</section>
+<!-- hotbook end -->
+
+<!-- dialog star -->
+<div role="dialog" id="dialog1" aria-labelledby="dialog1_label" aria-modal="true" class="hidden">
+    <!--Accordion  start-->
+    <div class="accordionqa">
+        <h2 tabindex="0" id="dialog1_label" class="dialog_label">詳細資料</h2>
+        <!-- accordionblock  start-->
+        <div class="accordionblock">
+            <button type="button" class="Q">書目資料(點選展開選單)</button>
+            <div class="A">
+                <div class="Ablock">
+                    <ol>
+                        <li><span class="title">書名</span>109年11月講座(142)：近百年臺灣原住民文學的發展</li>
+                        <li><span class="title">作者</span>孫大川 paelabang danapan (前監察院副院長)</li>
+                        <li><span class="title">出版社</span>國立臺灣圖書館</li>
+                        <li><span class="title">出版年</span>民110[2021]</li>
+                        <li><span class="title">分類</span><a href="#">言文字學總論</a> / <a href="#">形而上學總論</a> / <a href="#">遠東各地文學</a></li>
+                    </ol>
+                    <h3>簡介</h3>
+                    <p>談原住民文學，首先得思考「文字化」這個問題。嚴格說來，文學活動不應該被「文字」捆綁，口頭傳述的神話、傳說、故事，祭儀巫咒中的神聖吟詠，乃至日常生活中的即興歌謠，都是人類文心的躍動。文學不是少數文字精英的特權，芸芸眾生皆活在文學中，參與並分享同樣的創作衝動。
+                        作為部落民族，面對擁有權力和精密文字資產的異己國族，最大的挑戰在於藉文字同化的有形、無形力量，剝奪無文字部落民族說故事的權利，斷送其文學想像和創作的能力，成了別人甚至自己眼中永遠的「他者」，一種「第三人稱」的存在。
+                    因而，討論原住民文學的發展，就得兩面作戰：一方面要贏回悠久的口說傳統；另一方面要掌握一個新工具，全面介入書寫世界，活化民族說故事和創作的能力。</p>
+                    <h4>調查報告裡的原民文學</h4>
+                    <p>用近百年的時間跨度來思考原住民文學，主要是因為在日本殖民統治（1895）以前，臺灣花蓮、臺東一帶和中央山脈地區，各部族大致還保有自己語言、文化和生活空間的自主性。和清代不同，日本殖民政府在改變、破壞原住民的文化和生活世界前，曾經投入不少力量進行土地資源調查及族群語言、社會、宗教、慣習、體質等人類學項目的踏查工作，因而蒐集、記錄、整理、保留並研究無文字時代原住民各族文化較原始的風貌，是現今我們掌握口傳時期原住民文學特徵的主要材料。
+                    此外，日治以前，原住民尤其平埔各族雖有借用羅馬拉丁拼音和漢字拼讀進行族語書寫的經驗，但並不全面。日治時期則不同，成功的「國語」（日語）教育，以及有效的原住民教師、警員人才的培育，造就了能操作日文的臺灣原住民知識精英。直到戰後三十年，用日文假名拼寫族語，無論在個人書信、日記、歌曲創作或聖經翻譯等事務上，都有相當的文獻積累，反映了文化劇變時代，民族文心猶豫、悲憤、委順與抗辯的實況。有關這方面資料的彙整和研究，目前還只是初步的階段，需要投注更大的關心。</p>
+                    <h4>失語年代的吟唱文學力量</h4>
+                    <p>如果說日語是原住民的第一個「國語」，1945年之後它就被迫歸零了；近代「中文」，變成了原住民必須去積極學習、掌握的「第二個國語」。1980年代前，原住民社會最大的改變是：一、人口大量移入都市，部落空洞化，祭典儀式無法繼續舉行而快速廢弛，神話、傳說和和祭儀等口頭文學實踐的「場域」喪失了。二、「第一個國語」和「第二個國語」無法銜接，族語斷裂，世代經驗無法傳遞。這是臺灣原住民族最黑暗的階段，是原住民「失語」又「失聲」的年代。</p>
+                </div>
+            </div>
+        </div>
+        <!-- accordionblock  end-->
+
+        <!-- accordionblock  start-->
+        <div class="accordionblock">
+            <button type="button" class="Q">資源教室(點選展開選單)</button>
+            <div class="A">
+                <div class="Ablock">
+                    <ol>
+                        <li><a href="#"><span class="title">線上聽</span>國立臺灣圖書館館藏<span class="date">上次線上聽時間：2021-07-22 15:37</span></a></li>
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+        <!-- accordionblock  end-->
+
+        <!-- accordionblock  start-->
+        <div class="accordionblock">
+            <button type="button" class="Q">分享(點選展開選單)</button>
+            <div class="A">
+                <div class="Ablock">
+                    <div class="btn_grp form_inline">
+                        <button class="btn btn-submit">加入個人書架</button>
+                        <button class="btn btn-submit">問題檔案回報</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- accordionblock  end-->
+
+        <!-- 留言 -->
+        <div class="facebook"><meta property="fb:admins" content="100005293576039"><meta property="fb:admins" content="1056543531"><meta property="fb:admins" content="100007863723385"><meta property="fb:app_id" content="782858918768576"><div class="facebook"><div class="fb-comments fb_iframe_widget fb_iframe_widget_fluid_desktop" data-href="https://viis.ntl.edu.tw/BookDetail/81200" data-num-posts="2" data-width="500" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=782858918768576&amp;container_width=570&amp;height=100&amp;href=https%3A%2F%2Fviis.ntl.edu.tw%2FBookDetail%2F81200&amp;locale=zh_TW&amp;sdk=joey&amp;version=v3.0&amp;width=500"><span style="vertical-align: bottom; width: 500px; height: 216px;"><iframe name="f1747037c9c09a4" width="500px" height="100px" data-testid="fb:comments Facebook Social Plugin" title="fb:comments Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v3.0/plugins/comments.php?app_id=782858918768576&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df881018bda6c0c%26domain%3Dviis.ntl.edu.tw%26origin%3Dhttps%253A%252F%252Fviis.ntl.edu.tw%252Ff24c6af6328e29c%26relation%3Dparent.parent&amp;container_width=570&amp;height=100&amp;href=https%3A%2F%2Fviis.ntl.edu.tw%2FBookDetail%2F81200&amp;locale=zh_TW&amp;sdk=joey&amp;version=v3.0&amp;width=500" style="border: none; visibility: visible; width: 500px; height: 216px;" class=""></iframe></span></div></div></div>
+        <!-- 留言 end-->
+        <div class="btn_grp dialog_form_actions">
+            <button onclick="closeDialog(this)">關閉</button>
+        </div>
+    </div>
+    <!--Accordion  end-->
+
+    <!-- popup content end -->
+
+</div>
+<!-- dialog end -->
+
+<!-- dialog star -->
+<div role="dialog" id="dialog2" aria-labelledby="dialog2_label" aria-modal="true" class="hidden">
+    <!-- popup content star -->
+    <!-- login  start-->
+    <div class="login">
+        <h2 tabindex="0" id="dialog2_label" class="dialog_label">會員登入</h2>
+        <p>帳號請輸入借閱證號或身分證字號<br>密碼請輸入自訂密碼</p>
+        <div class="flex-form">
+            <div class="form_grp form_inline">
+                <label for="username">帳號:</label>
+                <input name="username" type="text" placeholder="請輸入文字">
+            </div>
+            <div class="form_grp form_inline">
+                <label for="password">密碼:</label>
+                <input name="password" type="password" placeholder="請輸入密碼">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">顯示密碼</label>
+            </div>
+            <div class="btn_grp form_inline dialog_form_actions">
+                <button class="btn btn-orange">忘記密碼</button>
+                <button class="btn btn-submit">登入</button>
+                <button onclick="closeDialog(this)" class="btn">關閉</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- login  end-->
+    <!-- popup content end -->
+
+</div>
+<!-- dialog end -->
+
+
+</div>
+
+
+<!-- footer Start-->
+<footer>
+    <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+        <div class="footer_info">
+            <p>
+                電話：02-7725-8000、02-2361-6663<br>
+                傳真：02-2375-3925、02-2331-6593<br>
+                地址：台北市中正區忠孝西路一段50號13樓之19<br>
+                劃撥帳號：15935356 (為本會一般捐款，依目前會務事項而使用)<br>
+                劃撥帳號：14365043 (為本會專案專款專用的帳號)<br>
+                Email : eyelove@tfb.org.tw<br>
+                Copyright © 2021 Greatest Idea Strategy Co.,Ltd All rights reserved.
+            </p>
+        </div>
+        <div class="footer_icon">
+            <a target="_blank" href="javascript:;" title="另開視窗">
+                <img src="images/accessibility2.jpg" alt="無障礙標章">
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- footer End -->
+</div>
+<a href="javascript:;" class="scrollToTop">回頁首</a>
+<!-- JQ -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<!-- 外掛 plugin js -->
+<script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+<script src="vendor/slick/slick.min.js "></script><!-- slick -->
+<script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+<script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+<script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+<script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+<!-- hyUI -->
+<script src="js/hyui.js"></script>
+<!-- 客製js -->
+<script src="js/customize.js"></script>
+</body>
+
+</html>

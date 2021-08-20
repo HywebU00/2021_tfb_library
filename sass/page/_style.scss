@@ -1,0 +1,177 @@
+//fontcolor
+body{
+    &.tC_white * {
+        color: $color-white !important;
+    }
+    &.tC_black * {
+        color: $color-black !important;
+    }
+    &.tC_yellow * {
+        color: $color-yellow !important;
+    }
+    &.tC_lime * {
+        color: $color-lime !important;
+    }
+}
+
+
+//background
+body{
+    &.bC_black{
+        background: $color-black;
+        .main, .header, .newbook .booklist, .more a, .hotbook, *[class*="notice_error"], .book-recommend .booklist, .mpsearch, .login, .bookfun, .menu{
+            background: $color-black; 
+        }
+
+        .newbook .booklist, .content-area{
+            box-shadow:none;
+        }
+
+        footer{
+            background:$color-black url(none);
+        }
+        
+        input[type="text"], input[type="password"], select, textarea, button, .btn, input[type="submit"], input[type="reset"], input[type="button"], input[type="search"], .input-i, .calendar{
+            color: $color-black!important;        
+        }
+        .mpsearch{
+            .form_grp{
+                input[type="submit"]{
+                    background:$color-white;
+                    border: solid 1px $color-white;  
+                }
+            }
+            .btn_grp{
+                .adv{
+                  border: solid 1px $color-white;    
+              }
+          }
+
+      }
+
+      .sub-search .btn-search, .btn-submit, .btn-reset{
+        background:$color-white;
+        border: solid 1px $color-white;
+        color:$color-black!important;
+    }
+    .cp blockquote, .tooltip span, table, table th, table td, .img_list>ul>li, .img_list2>ul>li, .content-area, .bookbrowsing ul li a{
+        background: rgba(0, 0, 0, 0);
+        border: solid 1px $color-white;
+    }
+    .web_link h3{
+        border-bottom: 1px solid $color-white;
+    }
+    .lp .list>ul, .lp .list ol{
+        border-top: 1px solid $color-white;
+    }
+    .bookfun{
+        .btn-submit {
+            background: #016c30;
+            border: 1px solid #016c30;
+            color: #FFF!important;
+        }
+    }
+    .booksearch{
+        .btn-search{
+           color: #FFF!important; 
+       }
+   }
+   .expansile {
+    .fadeout{
+        background: linear-gradient(to right, rgba(191,194,194,0) 1%,#000000 50%);
+    }
+}
+
+}
+&.bC_white {
+    background: $color-white;
+    .main, .header, .newbook .booklist, .more a, .hotbook, *[class*="notice_error"], .book-recommend .booklist, .mpsearch, .login, .bookfun, .menu{
+        background: $color-white;
+    }
+
+    .newbook .booklist, .content-area{
+        box-shadow:none;
+    }
+
+    footer{
+        background:$color-white url(none);
+    }
+
+    input[type="text"], input[type="password"], select, textarea, button, .btn, input[type="submit"], input[type="reset"], input[type="button"], input[type="search"], .input-i, .calendar{
+        // color: $color-black!important;        
+    }
+    .mpsearch{
+        .form_grp{
+            input[type="submit"]{
+                background:$color-black;
+                border: solid 1px $color-black;
+                color: $color-white!important;
+            }
+        }
+        .btn_grp{
+            .adv{
+                background:$color-white;
+                border: solid 1px $color-black;
+                color: $color-black!important;
+            }
+        }
+        select{
+         color: $color-black!important; 
+     }
+
+ }
+
+ .sub-search .btn-search, .btn-submit, .btn-reset, .sidebar .m_area{
+    background:$color-white;
+    border: solid 1px $color-black;
+    color:$color-black!important;
+}
+.cp blockquote, .tooltip span, table, table th,table td, .img_list>ul>li, .img_list2>ul>li, .content-area, .bookbrowsing ul li a{
+    background: rgba(0, 0, 0, 0);
+    border: solid 1px $color-black;
+}
+.web_link h3{
+    border-bottom: 1px solid $color-black;
+}
+.lp .list>ul, .lp .list ol{
+    border-top: 1px solid $color-black;
+}
+.bookfun{
+    .btn-submit {
+        background: rgba(0, 0, 0, .2);
+        border: 1px solid $color-black;
+    }
+}
+.booksearch{
+    .btn-search{
+       color: $color-white!important;
+   }
+}
+.expansile {
+    .fadeout{
+        background: linear-gradient(to right, rgba(191,194,194,0) 1%,#ffffff 50%);
+    }
+}
+.menu ul li ul{
+    background:$color-white;
+    border: solid 1px $color-black;
+    li{
+        a{
+            &:hover{
+                background:rgba(0, 0, 0 , .1);
+            }        
+        }
+
+    }
+}
+
+.sidebar .navigation ul li a:hover, .sidebar .navigation ul li a:focus{
+    background: rgba(0, 0, 0, .1);
+}
+.file_download li .file_name ~ span a, div.function ul li button, div.function ul li a, .header .navigation .navlist li.help_p a, .expansile .readAll, .more2 a{
+    color: $color-white!important;
+}
+
+}
+
+}
