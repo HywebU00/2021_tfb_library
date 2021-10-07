@@ -263,7 +263,7 @@
     vertical-align: top;
     font-size: 1em;
     font-weight: bold;
-    margin: -227px auto 2em;
+    margin: -180px auto 2em;
     padding: 1em 2em 3.5em;
     box-sizing: border-box;
     background: $color-white;
@@ -275,11 +275,10 @@
         margin: -180px auto 2em;
     }
     @include screen('tablet') {
-        margin: -120px auto 2em;
         max-width: 88%;
     }
     @include screen('mobile') {
-        margin: -60px auto 1em;
+        margin: -100px auto 1em;
         padding: 0 0 1em;
         height: auto;
     }

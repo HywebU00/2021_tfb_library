@@ -135,13 +135,16 @@ a.more {
     }
 
     &.has_bg{
-        height: auto;
+        height: 440px;
+        background: url('../images/has_bg.jpg')no-repeat center center;
+        background-size: cover;
 
         .container{
             max-width: 100%;
         }
         @include screen('mobile') {
             margin-top:60px;
+            height: 240px;
         }
     }
     .container{
@@ -196,16 +199,16 @@ a.more {
 
 }
 .innerpage{
-   .main_image{
+ .main_image{
     .container{
         margin-bottom: .5em;
         &:before{
             display: none;
         }
         &:after{
-           display: none; 
-       }
-   }
+         display: none; 
+     }
+ }
 } 
 }
 
@@ -216,13 +219,13 @@ a.more {
         letter-spacing: 0.2em;
     }
     .booklist{
-       background: $color-white;
-       max-width: 88%;
-       box-shadow: 5px 0 50px rgba(0, 0, 0, .16);
-       margin: 0 auto;
-       padding: 60px 0 20px;
-       overflow: hidden;
-       ul{
+     background: $color-white;
+     max-width: 88%;
+     box-shadow: 5px 0 50px rgba(0, 0, 0, .16);
+     margin: 0 auto;
+     padding: 60px 0 20px;
+     overflow: hidden;
+     ul{
         list-style: none;
         margin: 0 20px;
         padding: 0;
@@ -300,12 +303,12 @@ a.more {
                     color:$color-white;
                     display: block;
                     &:hover{
-                       color:$color-white; 
-                   }
-               }
-           }
-       }      
-   }
+                     color:$color-white; 
+                 }
+             }
+         }
+     }      
+ }
 }
 
 .more {

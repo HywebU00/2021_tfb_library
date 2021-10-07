@@ -109,7 +109,13 @@
 .i_setting { @include hyui_icon('icon_setting'); }
 .i_sort { @include hyui_icon('icon_sort'); }
 .i_star { @include hyui_icon('icon_star'); }
-
+.i_show { @include hyui_icon('icon_show'); 
+    &:before {
+        width: 1.4em;
+        height: 1.4em;
+        margin-top: 0.1em;
+    }
+}
 
 // ---------------- T ----------------
 .i_top { @include hyui_icon('icon_top'); }
