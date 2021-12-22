@@ -18,12 +18,17 @@
                 margin-left: 0;
                 padding: 0;
             }
+            a {
+                @include aSetting_nocolor;
+                display: inline-block;
+            }
+
+            &:focus{
+                outline: solid 2px $aFocus!important;
+            }
         }
     }
-    a {
-        @include aSetting_nocolor;
-        display: inline-block;
-    }
+
 }
 .mp{
     .breadcrumb{
@@ -37,9 +42,9 @@
         max-width: 80%;
         margin: 0 auto;
         @include screen('tablet') {
-           max-width: 88%; 
-       }
-       @include screen('mobile') {
+         max-width: 88%; 
+     }
+     @include screen('mobile') {
         max-width: 98%; 
     }
 }

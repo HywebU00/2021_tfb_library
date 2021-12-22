@@ -21,9 +21,11 @@ footer {
     a {
         text-decoration: none;
         color: $primaryColor;
-        &:hover,
-        &:focus {
+        &:hover{
             color: darken($primaryColor, 10);
+        }
+        &:focus{
+            box-shadow: 0 0 0 2px $aFocus;
         }
     }
     .footer_logo {
@@ -36,13 +38,13 @@ footer {
         flex:0 1 200px;
         margin-top: 3em;
         @include screen('tablet') {
-         flex:1 1 100%; 
-         text-align: right;
-         margin-top: .5em;
-     }
-     @include screen('mobile') {
-     }
- }
+           flex:1 1 100%; 
+           text-align: right;
+           margin-top: .5em;
+       }
+       @include screen('mobile') {
+       }
+   }
     // 版權連結
     .footer_link {
         @include li-reset();
@@ -55,9 +57,9 @@ footer {
             flex:0 1 auto;
             margin: 0px 5px 5px 0px;
             @include screen('mobile') {
-               flex:1 1 100%; 
-           }
-           a {
+             flex:1 1 100%; 
+         }
+         a {
             display: block;
             padding: .5em 1em;
             background: $primaryColor;
