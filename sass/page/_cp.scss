@@ -198,9 +198,9 @@ h1.title, h2.title {
       }
       &.file_ppt, &.file_pptx, &.file_odp, &.file_pdf{
         a{
-          background: #c55a3b;
+          background: #d54100;
           &:hover, &:focus{
-            background: darken(#c55a3b, 5%);
+            background: darken(#d54100, 5%);
           }
         }
       }
@@ -214,9 +214,9 @@ h1.title, h2.title {
       }
       &.file_zip{
         a{
-          background: #eb712e;
+          background: #d54100;
           &:hover, &:focus{
-            background: darken(#eb712e, 5%);
+            background: darken(#d54100, 5%);
           }
         }
       }
@@ -230,17 +230,17 @@ h1.title, h2.title {
       }
       &.file_mov{
         a{
-          background: #009999;
+          background: #007f80;
           &:hover, &:focus{
-            background: darken(#009999, 5%);
+            background: darken(#007f80, 5%);
           }
         }
       }
       &.file_mp3, &.file_mp4{
         a{
-          background: #088ecc;
+          background: #077bb1;
           &:hover, &:focus{
-            background: darken(#088ecc, 5%);
+            background: darken(#077bb1, 5%);
           }
         }
       }
